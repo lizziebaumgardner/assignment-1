@@ -1,7 +1,13 @@
+/* Changes background color */
+*{
+	background-color: #FAF8E1;
+}
+
+
 /* General styles */
 p, section{
     /* Sets a max-width for all paragraphs */
-    max-width:550px;
+    max-width:700px;
 
     /* Uses the margin trick to center */
     margin:10px auto;
@@ -20,9 +26,9 @@ img{
 
 	margin: 10px;
 
-	padding: 15px;
+	padding: 10px;
 
-	border-color: darkblue;
+	border-color: #1D3258;
 	 }
 
  /* Link styles */
@@ -42,10 +48,10 @@ a:hover{
  	/* Sets the font family for the body*/
 	font-family: 'Georgia', sans-serif;
 
+	/* Sets font weight and centers for specific text*/
 	#cas{
-		font-weight: 50px;
-	
- }
+		font-weight: 800;
+	}
 
 /* Header styles */
 header{
@@ -55,6 +61,9 @@ header{
 
 	/* Sets the font family for the body*/
 	font-family: 'Roboto', sans-serif;
+
+	/* Adjusts spacing*/
+	padding-top: 7px;
 
 }
 
@@ -68,9 +77,6 @@ header h1{
  
 	/* Left-aligns the text */
 	text-align: left;
-
-	/*  Changes the background color behind header
-	background-color: skyblue*/
 
 	/*Changes font*/
 	font-family: georgia;
@@ -96,6 +102,12 @@ header h3 {
 	/*Sets a smaller font size for h3s in the header section */
 	font-size: 14px;
 
+}
+
+#space {
+
+	/* Adjusts spacing*/
+	padding-bottom: 7px;
 }
 
  /* Styles for the banner image and caption */
@@ -128,31 +140,53 @@ figure.banner{
 	margin-bottom: -5px;
  }
 
-/* Chart styles*/
-p.chartWrapper {
-
-	/* Adds space above and below the chart */
-	margin-top: 20px;
-	margin-bottom: 20px;
-
-	/* Overrides the Max Width setting for paragraphs */
-	max-width: 700px;
-
-	padding: 20px;
-	border: 5px double #2166ac;
+/*Styles Instagram Post Embed*/
+.instagram-media-post {
+	background: white; 
+	max-width: 550px; 
+	width: calc(100% - 2px); 
+	border-radius: 3px; 
+	border: 1px solid rgb(219, 219, 219); 
+	box-shadow: none; 
+	display: block; 
+	margin: 0px 0px 12px; 
+	min-width: 326px; 
+	padding: 0px;
+	text-align: center;
+	height: 1123px;
 }
 
-/* Twitter embed styles */
-.instagram {
-
-	/* Adds a little space above and below */ 
-	padding-top: 20px;
-	padding-bottom: 20px;
-
-	/* Uses the margin trick to center */
-    margin: 10px auto;
-	
+/*Styles Instagram Reel Embed*/
+.instagram-media-reel {
+	background: white; 
+	max-width: 550px; 
+	width: calc(100% - 2px); 
+	border-radius: 3px; 
+	border: 1px solid rgb(219, 219, 219); 
+	box-shadow: none; 
+	display: block; 
+	margin: 0px 0px 12px; 
+	min-width: 326px;
+	padding: 0px; 
+	text-align: center;
+	height: 1015px;
 }
+
+/* Styles Twitter embed*/
+.twitter-tweet {
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+/* Centers embeds */
+iframe {
+	margin: 0 auto !important;
+	}
+
+.twitter-tweet {
+	margin: 0 auto !important;
+}
+
 
 /* Styles for the final section */
 section.last{
